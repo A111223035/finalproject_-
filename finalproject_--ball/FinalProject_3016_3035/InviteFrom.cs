@@ -124,7 +124,7 @@ namespace FinalProject_3016_3035
                         for (int i = 0; i < M.Length; i++) listBox1.Items.Add(M[i]);
                         break;
                     case "5":
-                        DialogResult result = MessageBox.Show("是否重玩遊戲(連" + Str + "排)?", "重玩訊息", MessageBoxButtons.YesNo);
+                        DialogResult result = MessageBox.Show("是否重玩遊戲(" + Str + "輪)?", "重玩訊息", MessageBoxButtons.YesNo);
                         if (result == DialogResult.Yes)
                         {
                             comboBox1.Text = Str;
@@ -156,7 +156,7 @@ namespace FinalProject_3016_3035
                         break;
                     case "I":
                         string[] F = Str.Split(',');
-                        DialogResult res = MessageBox.Show(F[0] + "邀請玩遊戲(連" + F[1] + "排)，是否接受?", "邀請訊息", MessageBoxButtons.YesNo);
+                        DialogResult res = MessageBox.Show(F[0] + "邀請玩遊戲(" + F[1] + "輪)，是否接受?", "邀請訊息", MessageBoxButtons.YesNo);
                         if (res == DialogResult.Yes)
                         {
                             int i = listBox1.Items.IndexOf(F[0]);
@@ -283,7 +283,7 @@ namespace FinalProject_3016_3035
             }
 
             // 逐漸增加球速
-            if (speedIncreaseCount >= 5) // 每5次增加球速
+            if (speedIncreaseCount >= 2) // 每2次增加球速
             {
                 IncreaseSpeed(); // 增加球速
                 speedIncreaseCount = 0; // 重置計數器
@@ -359,12 +359,12 @@ namespace FinalProject_3016_3035
         {
             LabelPlayerScore.Text = "我方得分： " + playerScore.ToString();
             LabelOpponentScore.Text = "對手得分： " + opponentScore.ToString();
-            if (playerScore >= 10)
+            if (playerScore >= 3)
             {
                 MessageBox.Show("You Win!");
                 ResetGame();
             }
-            else if (opponentScore >= 10)
+            else if (opponentScore >= 3)
             {
                 MessageBox.Show("Opponent Wins!");
                 ResetGame();

@@ -135,7 +135,7 @@ namespace FinalProject
                         for (int i = 0; i < M.Length; i++) listBox1.Items.Add(M[i]);
                         break;
                     case "5":
-                        DialogResult result = MessageBox.Show("是否重玩遊戲(連" + Str + "排)?", "重玩訊息", MessageBoxButtons.YesNo);
+                        DialogResult result = MessageBox.Show("是否重玩遊戲(" + Str + "輪)?", "重玩訊息", MessageBoxButtons.YesNo);
                         if (result == DialogResult.Yes)
                         {
                             comboBox1.Text = Str;
@@ -167,7 +167,7 @@ namespace FinalProject
                         break;
                     case "I":
                         string[] F = Str.Split(',');
-                        DialogResult res = MessageBox.Show(F[0] + "邀請玩遊戲(連" + F[1] + "排)，是否接受?", "邀請訊息", MessageBoxButtons.YesNo);
+                        DialogResult res = MessageBox.Show(F[0] + "邀請玩遊戲(" + F[1] + "輪)，是否接受?", "邀請訊息", MessageBoxButtons.YesNo);
                         if (res == DialogResult.Yes)
                         {
                             int i = listBox1.Items.IndexOf(F[0]);
