@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\shu\\Downloads\\UDPServer\\UDPServer\\A111223016_UDPServer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E46BEAE2-3D9F-4152-A728-AD92A7981F06}|A111223016_UDPServer.csproj|c:\\users\\shu\\downloads\\udpserver\\udpserver\\a111223016_udpserver\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E46BEAE2-3D9F-4152-A728-AD92A7981F06}|A111223016_UDPServer.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E46BEAE2-3D9F-4152-A728-AD92A7981F06}|A111223016_UDPServer.csproj|C:\\Users\\shu\\Downloads\\UDPServer\\UDPServer\\A111223016_UDPServer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E46BEAE2-3D9F-4152-A728-AD92A7981F06}|A111223016_UDPServer.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\shu\\Downloads\\UDPServer\\UDPServer\\A111223016_UDPServer\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\shu\\Downloads\\UDPServer\\UDPServer\\A111223016_UDPServer\\Form1.cs*",
+              "RelativeToolTip": "Form1.cs*",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAiwKEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T03:22:57.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\shu\\Downloads\\UDPServer\\UDPServer\\A111223016_UDPServer\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\shu\\Downloads\\UDPServer\\A111223016_UDPServer\\Form1.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "..\\..\\A111223016_UDPServer\\Form1.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T03:09:43.163Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
