@@ -217,6 +217,10 @@
             this.txtPlayerName.TabIndex = 213;
             this.txtPlayerName.Text = "玩家名稱：";
             // 
+            // Timer1
+            // 
+            this.Timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            // 
             // G
             // 
             this.G.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
