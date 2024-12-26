@@ -120,7 +120,7 @@
             // 
             this.txtSystemMessage.AutoSize = true;
             this.txtSystemMessage.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtSystemMessage.Location = new System.Drawing.Point(23, 560);
+            this.txtSystemMessage.Location = new System.Drawing.Point(12, 558);
             this.txtSystemMessage.Name = "txtSystemMessage";
             this.txtSystemMessage.Size = new System.Drawing.Size(86, 24);
             this.txtSystemMessage.TabIndex = 218;
@@ -141,10 +141,10 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox4.Location = new System.Drawing.Point(26, 584);
+            this.textBox4.Location = new System.Drawing.Point(13, 584);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(388, 32);
+            this.textBox4.Size = new System.Drawing.Size(480, 32);
             this.textBox4.TabIndex = 216;
             // 
             // button1
