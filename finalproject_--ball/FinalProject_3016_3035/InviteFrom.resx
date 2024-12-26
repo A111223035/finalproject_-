@@ -124,7 +124,7 @@
   <data name="Q.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAACN9JREFUWEftWGtQlNcZ3gKLSapGvLFc5KIIC1GRBZZlF3YRVJaLiKzcBWEJLDe5
+        DQAACw0B7QfALAAACN9JREFUWEftWGtQlNcZ3gKLSapGvLFc5KIIC1GRBZZlF3YRVJaLiKzcBWEJLDe5
         CMr9oqiwgNxklzuEGKepY5VEk9pop9MxiW1Mpu0kaZtmOulUuSaZROv05z495+MD+djFW0w7nfGZef7s
         nnOe5zvvOe/7fh/vOZ7jkVBYWNr4C81tpLvNrKXxZtayOPP1sl3L1klceLw6M3bQfxlW3i9bCGSa9XbS
         qxFukvsl28Xoioo2xKo0WCuKxcboUjgo87HOL/HuC44hb/OtpWm8dYrl7OwfEQ4BVnyBTKt09bs3KvXF
@@ -165,4 +165,7 @@
         vwGP9x99rIcxy2ZPPQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
 </root>

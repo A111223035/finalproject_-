@@ -357,8 +357,8 @@ namespace FinalProject_3016_3035
         // 更新分數顯示
         private void UpdateScore()
         {
-            LabelPlayerScore.Text = "我方得分: " + playerScore.ToString();
-            LabelOpponentScore.Text = "對手得分: " + opponentScore.ToString();
+            LabelPlayerScore.Text = "我方得分： " + playerScore.ToString();
+            LabelOpponentScore.Text = "對手得分： " + opponentScore.ToString();
             if (playerScore >= 10)
             {
                 MessageBox.Show("You Win!");

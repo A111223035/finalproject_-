@@ -266,22 +266,22 @@
             // LabelOpponentScore
             // 
             this.LabelOpponentScore.AutoSize = true;
-            this.LabelOpponentScore.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.LabelOpponentScore.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.LabelOpponentScore.Location = new System.Drawing.Point(325, 537);
             this.LabelOpponentScore.Name = "LabelOpponentScore";
-            this.LabelOpponentScore.Size = new System.Drawing.Size(89, 20);
+            this.LabelOpponentScore.Size = new System.Drawing.Size(112, 25);
             this.LabelOpponentScore.TabIndex = 226;
-            this.LabelOpponentScore.Text = "對手得分";
+            this.LabelOpponentScore.Text = "對手得分：";
             // 
             // LabelPlayerScore
             // 
             this.LabelPlayerScore.AutoSize = true;
-            this.LabelPlayerScore.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.LabelPlayerScore.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.LabelPlayerScore.Location = new System.Drawing.Point(183, 537);
             this.LabelPlayerScore.Name = "LabelPlayerScore";
-            this.LabelPlayerScore.Size = new System.Drawing.Size(89, 20);
+            this.LabelPlayerScore.Size = new System.Drawing.Size(112, 25);
             this.LabelPlayerScore.TabIndex = 225;
-            this.LabelPlayerScore.Text = "我方得分";
+            this.LabelPlayerScore.Text = "我方得分：";
             // 
             // InviteFrom
             // 
@@ -308,7 +308,7 @@
             this.Controls.Add(this.txtPlayerName);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "InviteFrom";
-            this.Text = "Invite";
+            this.Text = "飛碟球遊戲";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.G.ResumeLayout(false);

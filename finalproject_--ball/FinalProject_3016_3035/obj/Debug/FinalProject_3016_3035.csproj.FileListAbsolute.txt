@@ -22,3 +22,6 @@ C:\Users\shu\Desktop\FinalProject_3016_3035\obj\Debug\FinalProject_3016_3035.csp
 C:\Users\shu\Desktop\FinalProject_3016_3035\obj\Debug\FinalProject_3016_3035.exe
 C:\Users\shu\Desktop\FinalProject_3016_3035\obj\Debug\FinalProject_3016_3035.pdb
 C:\Users\shu\Desktop\FinalProject_3016_3035\obj\Debug\FinalProject.歡迎來到林珈羽和黃香綾製作的遊戲.resources
+C:\Users\user\Documents\GitHub\finalproject_-\finalproject_--ball\FinalProject_3016_3035\obj\Debug\FinalProject_3016_3035.csproj.AssemblyReference.cache
+C:\Users\user\Documents\GitHub\finalproject_-\finalproject_--ball\FinalProject_3016_3035\obj\Debug\FinalProject_3016_3035.exe
+C:\Users\user\Documents\GitHub\finalproject_-\finalproject_--ball\FinalProject_3016_3035\obj\Debug\FinalProject_3016_3035.pdb

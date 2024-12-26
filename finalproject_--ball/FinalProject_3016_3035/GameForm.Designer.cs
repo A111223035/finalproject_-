@@ -53,7 +53,7 @@
             // 
             this.txtSystemMessage.AutoSize = true;
             this.txtSystemMessage.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtSystemMessage.Location = new System.Drawing.Point(133, 338);
+            this.txtSystemMessage.Location = new System.Drawing.Point(37, 270);
             this.txtSystemMessage.Name = "txtSystemMessage";
             this.txtSystemMessage.Size = new System.Drawing.Size(86, 24);
             this.txtSystemMessage.TabIndex = 204;
@@ -62,7 +62,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(407, 132);
+            this.pictureBox3.Location = new System.Drawing.Point(312, 51);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(109, 104);
@@ -73,7 +73,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(272, 132);
+            this.pictureBox2.Location = new System.Drawing.Point(177, 51);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(109, 104);
@@ -84,7 +84,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(141, 132);
+            this.pictureBox1.Location = new System.Drawing.Point(46, 51);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(109, 104);
@@ -95,19 +95,19 @@
             // txtResult
             // 
             this.txtResult.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtResult.Location = new System.Drawing.Point(227, 334);
+            this.txtResult.Location = new System.Drawing.Point(131, 266);
             this.txtResult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtResult.Name = "txtResult";
-            this.txtResult.Size = new System.Drawing.Size(371, 32);
+            this.txtResult.Size = new System.Drawing.Size(385, 32);
             this.txtResult.TabIndex = 200;
             // 
             // btnStartGame
             // 
-            this.btnStartGame.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnStartGame.Location = new System.Drawing.Point(549, 244);
+            this.btnStartGame.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnStartGame.Location = new System.Drawing.Point(453, 186);
             this.btnStartGame.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStartGame.Name = "btnStartGame";
-            this.btnStartGame.Size = new System.Drawing.Size(123, 41);
+            this.btnStartGame.Size = new System.Drawing.Size(144, 59);
             this.btnStartGame.TabIndex = 199;
             this.btnStartGame.Text = "開始遊戲";
             this.btnStartGame.UseVisualStyleBackColor = true;
@@ -116,7 +116,7 @@
             // btnScissors
             // 
             this.btnScissors.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnScissors.Location = new System.Drawing.Point(288, 254);
+            this.btnScissors.Location = new System.Drawing.Point(192, 186);
             this.btnScissors.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnScissors.Name = "btnScissors";
             this.btnScissors.Size = new System.Drawing.Size(84, 41);
@@ -127,7 +127,7 @@
             // btnPaper
             // 
             this.btnPaper.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnPaper.Location = new System.Drawing.Point(421, 254);
+            this.btnPaper.Location = new System.Drawing.Point(325, 186);
             this.btnPaper.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPaper.Name = "btnPaper";
             this.btnPaper.Size = new System.Drawing.Size(84, 41);
@@ -139,16 +139,16 @@
             // 
             this.lblCountdown.AutoSize = true;
             this.lblCountdown.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblCountdown.Location = new System.Drawing.Point(559, 198);
+            this.lblCountdown.Location = new System.Drawing.Point(462, 143);
             this.lblCountdown.Name = "lblCountdown";
-            this.lblCountdown.Size = new System.Drawing.Size(65, 24);
+            this.lblCountdown.Size = new System.Drawing.Size(116, 24);
             this.lblCountdown.TabIndex = 196;
-            this.lblCountdown.Text = "label3";
+            this.lblCountdown.Text = "剩餘時間：5";
             // 
             // btnRock
             // 
             this.btnRock.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnRock.Location = new System.Drawing.Point(155, 254);
+            this.btnRock.Location = new System.Drawing.Point(59, 186);
             this.btnRock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRock.Name = "btnRock";
             this.btnRock.Size = new System.Drawing.Size(83, 41);
@@ -158,11 +158,11 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("微軟正黑體", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button1.Location = new System.Drawing.Point(613, 342);
+            this.button1.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button1.Location = new System.Drawing.Point(522, 266);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(59, 24);
+            this.button1.Size = new System.Drawing.Size(75, 32);
             this.button1.TabIndex = 205;
             this.button1.Text = "退出";
             this.button1.UseVisualStyleBackColor = true;
@@ -172,27 +172,27 @@
             // 
             this.lblPlayerScore.AutoSize = true;
             this.lblPlayerScore.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblPlayerScore.Location = new System.Drawing.Point(559, 98);
+            this.lblPlayerScore.Location = new System.Drawing.Point(462, 63);
             this.lblPlayerScore.Name = "lblPlayerScore";
-            this.lblPlayerScore.Size = new System.Drawing.Size(21, 24);
+            this.lblPlayerScore.Size = new System.Drawing.Size(116, 24);
             this.lblPlayerScore.TabIndex = 206;
-            this.lblPlayerScore.Text = "0";
+            this.lblPlayerScore.Text = "我方得分：0";
             // 
             // lblOpponentScore
             // 
             this.lblOpponentScore.AutoSize = true;
             this.lblOpponentScore.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblOpponentScore.Location = new System.Drawing.Point(559, 132);
+            this.lblOpponentScore.Location = new System.Drawing.Point(462, 97);
             this.lblOpponentScore.Name = "lblOpponentScore";
-            this.lblOpponentScore.Size = new System.Drawing.Size(21, 24);
+            this.lblOpponentScore.Size = new System.Drawing.Size(116, 24);
             this.lblOpponentScore.TabIndex = 207;
-            this.lblOpponentScore.Text = "0";
+            this.lblOpponentScore.Text = "對手得分：0";
             // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(653, 347);
             this.Controls.Add(this.lblOpponentScore);
             this.Controls.Add(this.lblPlayerScore);
             this.Controls.Add(this.button1);
@@ -208,7 +208,7 @@
             this.Controls.Add(this.btnRock);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "GameForm";
-            this.Text = "GameForm";
+            this.Text = "猜拳遊戲";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Forml_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

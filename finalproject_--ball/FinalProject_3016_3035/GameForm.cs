@@ -124,8 +124,8 @@ namespace FinalProject
             txtResult.Text = $"你的選擇: {playerChoice}\n對手的選擇: {opponentChoice}\n結果: {result}";
 
             // 更新得分顯示
-            lblPlayerScore.Text = $"你的分數: {playerScore}";
-            lblOpponentScore.Text = $"對手的分數: {opponentScore}";
+            lblPlayerScore.Text = $"我方得分： {playerScore}";
+            lblOpponentScore.Text = $"對手得分： {opponentScore}";
 
             // 遊戲結束後禁用選擇按鈕
             btnRock.Enabled = false;
