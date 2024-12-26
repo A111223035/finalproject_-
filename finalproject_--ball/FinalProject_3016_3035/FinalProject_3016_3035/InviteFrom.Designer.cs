@@ -48,10 +48,10 @@
             this.Timer1 = new System.Windows.Forms.Timer(this.components);
             this.G = new System.Windows.Forms.Panel();
             this.H1 = new System.Windows.Forms.Label();
+            this.Q = new System.Windows.Forms.Label();
             this.H2 = new System.Windows.Forms.Label();
             this.LabelOpponentScore = new System.Windows.Forms.Label();
             this.LabelPlayerScore = new System.Windows.Forms.Label();
-            this.Q = new System.Windows.Forms.Label();
             this.G.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -219,7 +219,7 @@
             // 
             // G
             // 
-            this.G.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.G.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.G.Controls.Add(this.H1);
             this.G.Controls.Add(this.Q);
             this.G.Controls.Add(this.H2);
@@ -239,6 +239,16 @@
             this.H1.TabIndex = 4;
             this.H1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.H1_MouseDown);
             this.H1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.H1_MouseMove);
+            // 
+            // Q
+            // 
+            this.Q.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Q.Image = ((System.Drawing.Image)(resources.GetObject("Q.Image")));
+            this.Q.Location = new System.Drawing.Point(209, 224);
+            this.Q.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Q.Name = "Q";
+            this.Q.Size = new System.Drawing.Size(40, 40);
+            this.Q.TabIndex = 6;
             // 
             // H2
             // 
@@ -268,16 +278,6 @@
             this.LabelPlayerScore.Size = new System.Drawing.Size(89, 20);
             this.LabelPlayerScore.TabIndex = 225;
             this.LabelPlayerScore.Text = "我方得分";
-            // 
-            // Q
-            // 
-            this.Q.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Q.Image = ((System.Drawing.Image)(resources.GetObject("Q.Image")));
-            this.Q.Location = new System.Drawing.Point(209, 224);
-            this.Q.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Q.Name = "Q";
-            this.Q.Size = new System.Drawing.Size(40, 40);
-            this.Q.TabIndex = 6;
             // 
             // InviteFrom
             // 
