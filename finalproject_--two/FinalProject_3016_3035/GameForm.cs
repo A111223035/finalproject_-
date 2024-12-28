@@ -285,8 +285,8 @@ namespace FinalProject
                         DialogResult result = MessageBox.Show("是否重玩遊戲(" + Str + "輪)?", "重玩訊息", MessageBoxButtons.YesNo);
                         if (result == DialogResult.Yes)
                         {
-                            comboBox1.Text = Str;
-                            comboBox1.Enabled = false;
+//                            comboBox1.Text = Str;
+//                            comboBox1.Enabled = false;
                             Send("P" + "Y" + "|" + listBox1.SelectedItem);
                         }
                         else
@@ -320,8 +320,8 @@ namespace FinalProject
                             int i = listBox1.Items.IndexOf(F[0]);
                             listBox1.SetSelected(i, true);
                             listBox1.Enabled = false;
-                            comboBox1.Text = F[1];
-                            comboBox1.Enabled = false;
+//                            comboBox1.Text = F[1];
+//                            comboBox1.Enabled = false;
                             button3.Enabled = false;
                             button1.Enabled = true;
                             Send("R" + "Y" + "|" + F[0]);
@@ -336,7 +336,7 @@ namespace FinalProject
                         {
                             MessageBox.Show(listBox1.SelectedItem.ToString() + "接受你的邀請，可以開始遊戲");
                             listBox1.Enabled = false;
-                            comboBox1.Enabled = false;
+ //                           comboBox1.Enabled = false;
                             button3.Enabled = false;
                             button1.Enabled = true;
                             button2.Enabled = true;

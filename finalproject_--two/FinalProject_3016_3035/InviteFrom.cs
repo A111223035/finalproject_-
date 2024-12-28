@@ -395,5 +395,10 @@ namespace FinalProject_3016_3035
             currentSpeed.Y = (int)(currentSpeed.Y * 1.1); // 逐漸增加Y軸速度
             Q.Tag = currentSpeed;
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();  // 退出遊戲
+        }
     }
 }
