@@ -42,28 +42,31 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 12;
-            this.listBox1.Location = new System.Drawing.Point(57, 85);
+            this.listBox1.ItemHeight = 15;
+            this.listBox1.Location = new System.Drawing.Point(76, 106);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(182, 172);
+            this.listBox1.Size = new System.Drawing.Size(241, 214);
             this.listBox1.TabIndex = 0;
             // 
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 12;
-            this.listBox2.Location = new System.Drawing.Point(63, 319);
+            this.listBox2.ItemHeight = 15;
+            this.listBox2.Location = new System.Drawing.Point(84, 399);
+            this.listBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(486, 172);
+            this.listBox2.Size = new System.Drawing.Size(647, 214);
             this.listBox2.TabIndex = 1;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label6.Location = new System.Drawing.Point(100, 35);
+            this.label6.Location = new System.Drawing.Point(133, 44);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 16);
+            this.label6.Size = new System.Drawing.Size(109, 20);
             this.label6.TabIndex = 20;
             this.label6.Text = "線上使用者";
             // 
@@ -71,9 +74,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label2.Location = new System.Drawing.Point(269, 85);
+            this.label2.Location = new System.Drawing.Point(359, 106);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 16);
+            this.label2.Size = new System.Drawing.Size(99, 20);
             this.label2.TabIndex = 19;
             this.label2.Text = "伺服器Port";
             // 
@@ -81,44 +85,50 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(274, 35);
+            this.label1.Location = new System.Drawing.Point(365, 44);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 16);
+            this.label1.Size = new System.Drawing.Size(85, 20);
             this.label1.TabIndex = 18;
             this.label1.Text = "伺服器IP";
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox2.Location = new System.Drawing.Point(365, 82);
+            this.textBox2.Location = new System.Drawing.Point(487, 102);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(184, 27);
+            this.textBox2.Size = new System.Drawing.Size(244, 31);
             this.textBox2.TabIndex = 17;
+            this.textBox2.Text = "2024";
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox1.Location = new System.Drawing.Point(365, 32);
+            this.textBox1.Location = new System.Drawing.Point(487, 40);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 27);
+            this.textBox1.Size = new System.Drawing.Size(244, 31);
             this.textBox1.TabIndex = 16;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label3.Location = new System.Drawing.Point(241, 278);
+            this.label3.Location = new System.Drawing.Point(321, 348);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 16);
+            this.label3.Size = new System.Drawing.Size(169, 20);
             this.label3.TabIndex = 21;
             this.label3.Text = "傳送與接收的訊息";
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button1.Location = new System.Drawing.Point(440, 143);
+            this.button1.Location = new System.Drawing.Point(587, 179);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 27);
+            this.button1.Size = new System.Drawing.Size(145, 34);
             this.button1.TabIndex = 22;
             this.button1.Text = "啟動伺服器";
             this.button1.UseVisualStyleBackColor = true;
@@ -126,9 +136,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(626, 536);
+            this.ClientSize = new System.Drawing.Size(835, 670);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label6);
@@ -138,8 +148,9 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
-            this.Text = "黃香綾的聊天伺服端";
+            this.Text = "遊戲伺服端";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Forml_FormClosing);
             this.Load += new System.EventHandler(this.Forml_Load);
             this.ResumeLayout(false);

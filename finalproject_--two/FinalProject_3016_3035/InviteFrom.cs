@@ -12,6 +12,7 @@ using System.Net.Sockets;
 using System.Threading;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
+using FinalProject;
 
 namespace FinalProject_3016_3035
 {
@@ -70,21 +71,9 @@ namespace FinalProject_3016_3035
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            if (listBox1.SelectedIndex != -1)
-            {
-                if (listBox1.SelectedItem.ToString() != User)//有選擇對手
-                {
-                    Send("I" + User + "," +  "|" + listBox1.SelectedItem);
-                }
-                else
-                {
-                    MessageBox.Show("不可以邀請自己!");
-                }
-            }
-            else
-            {
-                MessageBox.Show("沒有選取邀請的對象!");//如果沒有選擇對手
-            }
+            HomeForm homeForm = new HomeForm();
+            homeForm.Show(); // 顯示 HomeForm
+            this.Hide();     // 隱藏 
         }
         string my;
         bool Turn = true;
@@ -124,7 +113,7 @@ namespace FinalProject_3016_3035
                         for (int i = 0; i < M.Length; i++) listBox1.Items.Add(M[i]);
                         break;
                     case "5":
-                        DialogResult result = MessageBox.Show("是否重玩遊戲(" + Str + "輪)?", "重玩訊息", MessageBoxButtons.YesNo);
+                        DialogResult result = MessageBox.Show("是否重玩遊戲(" + Str + ")?", "重玩訊息", MessageBoxButtons.YesNo);
                         if (result == DialogResult.Yes)
                         {
 //                            comboBox1.Text = Str;
@@ -153,42 +142,7 @@ namespace FinalProject_3016_3035
                         button2.Enabled = false;
                         T.Close();
                         Th.Abort();
-                        break;
-                    case "I":
-                        string[] F = Str.Split(',');
-                        DialogResult res = MessageBox.Show(F[0] + "邀請玩遊戲(" + F[1] + "輪)，是否接受?", "邀請訊息", MessageBoxButtons.YesNo);
-                        if (res == DialogResult.Yes)
-                        {
-                            int i = listBox1.Items.IndexOf(F[0]);
-                            listBox1.SetSelected(i, true);
-                            listBox1.Enabled = false;
-//                            comboBox1.Text = F[1];
-//                            comboBox1.Enabled = false;
-                            button3.Enabled = false;
-                            button1.Enabled = true;
-                            Send("R" + "Y" + "|" + F[0]);
-                        }
-                        else
-                        {
-                            Send("R" + "N" + "|" + F[0]);
-                        }
-                        break;
-                    case "R":
-                        if (Str == "Y")
-                        {
-                            MessageBox.Show(listBox1.SelectedItem.ToString() + "接受你的邀請，可以開始遊戲");
-                            listBox1.Enabled = false;
-//                            comboBox1.Enabled = false;
-                            button3.Enabled = false;
-                            button1.Enabled = true;
-                            button2.Enabled = true;
-                        }
-                        else
-                        {
-                            MessageBox.Show("抱歉" + listBox1.SelectedItem.ToString() + "拒絕你的邀請");
-                        }
-                        break;
-
+                        break;                    
                     case "7":
                         H2.Left = G.Width - int.Parse(Str) - H2.Width;
                         break;
@@ -362,12 +316,26 @@ namespace FinalProject_3016_3035
             if (playerScore >= 3)
             {
                 MessageBox.Show("You Win!");
+                textBox4.Text = "你以" + playerScore + "分贏了對手，請繼續保持！";
                 ResetGame();
             }
             else if (opponentScore >= 3)
             {
                 MessageBox.Show("Opponent Wins!");
+                textBox4.Text = "你以" + playerScore + "分輸給對手，下次加油！";
                 ResetGame();
+            }
+            else if (playerScore > opponentScore)
+            {
+                textBox4.Text = "現在比分" + playerScore + "比" + opponentScore + "暫時領先"; 
+            }
+            else if (playerScore < opponentScore)
+            {
+                textBox4.Text = "現在比分" + playerScore + "比" + opponentScore + "暫時落後";
+            }
+            else if (playerScore == opponentScore)
+            {
+                textBox4.Text = "現在比分" + playerScore + "比" + opponentScore + "目前平手！";
             }
         }
         // 重置遊戲
@@ -394,11 +362,6 @@ namespace FinalProject_3016_3035
             currentSpeed.X = (int)(currentSpeed.X * 1.1); // 逐漸增加X軸速度
             currentSpeed.Y = (int)(currentSpeed.Y * 1.1); // 逐漸增加Y軸速度
             Q.Tag = currentSpeed;
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            this.Close();  // 退出遊戲
         }
     }
 }

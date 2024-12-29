@@ -17,7 +17,7 @@ namespace FinalProject_3016_3035
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new 歡迎來到林珈羽和黃香綾製作的遊戲());
+            Application.Run(new HomeForm());
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace FinalProject
 {
-    partial class 歡迎來到林珈羽和黃香綾製作的遊戲
+    partial class HomeForm
     {
         /// <summary>
         /// 設計工具所需的變數。
@@ -38,11 +38,11 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.txtSystemMessage = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.Label4 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // button1
@@ -146,24 +146,6 @@
             this.txtSystemMessage.TabIndex = 202;
             this.txtSystemMessage.Text = "系統訊息";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("新細明體", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.comboBox1.Location = new System.Drawing.Point(365, 228);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.MaxLength = 5;
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(79, 31);
-            this.comboBox1.TabIndex = 206;
-            this.comboBox1.Text = "1";
-            // 
             // listBox1
             // 
             this.listBox1.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -203,18 +185,31 @@
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.Location = new System.Drawing.Point(254, 231);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 24);
+            this.label1.Size = new System.Drawing.Size(48, 24);
             this.label1.TabIndex = 208;
-            this.label1.Text = "遊戲輪數：";
+            this.label1.Text = "遊戲";
             // 
-            // 歡迎來到林珈羽和黃香綾製作的遊戲
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "猜拳遊戲",
+            "飛碟球遊戲"});
+            this.comboBox1.Location = new System.Drawing.Point(308, 229);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(133, 28);
+            this.comboBox1.TabIndex = 244;
+            this.comboBox1.Text = "猜拳遊戲";
+            // 
+            // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(501, 450);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.Label4);
             this.Controls.Add(this.txtSystemMessage);
@@ -228,8 +223,8 @@
             this.Controls.Add(this.txtServerIP);
             this.Controls.Add(this.txtPlayerName);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "歡迎來到林珈羽和黃香綾製作的遊戲";
-            this.Text = "Form1";
+            this.Name = "HomeForm";
+            this.Text = "歡迎來到林珈羽和黃香綾製作的遊戲";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -249,11 +244,11 @@
         internal System.Windows.Forms.TextBox textBox4;
         internal System.Windows.Forms.Button button2;
         internal System.Windows.Forms.Label txtSystemMessage;
-        private System.Windows.Forms.ComboBox comboBox1;
         internal System.Windows.Forms.ListBox listBox1;
         internal System.Windows.Forms.Label Label4;
         private System.Windows.Forms.Button button3;
         internal System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

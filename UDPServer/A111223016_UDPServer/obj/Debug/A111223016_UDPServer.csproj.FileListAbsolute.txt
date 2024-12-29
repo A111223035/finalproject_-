@@ -28,3 +28,13 @@ C:\Users\shu\Downloads\UDPServer\UDPServer\A111223016_UDPServer\obj\Debug\A11122
 C:\Users\shu\Downloads\UDPServer\UDPServer\A111223016_UDPServer\obj\Debug\A111223016_UDPServer.csproj.CoreCompileInputs.cache
 C:\Users\shu\Downloads\UDPServer\UDPServer\A111223016_UDPServer\obj\Debug\A111223016_UDPServer.exe
 C:\Users\shu\Downloads\UDPServer\UDPServer\A111223016_UDPServer\obj\Debug\A111223016_UDPServer.pdb
+C:\Users\user\Documents\GitHub\finalproject_-\UDPServer\A111223016_UDPServer\bin\Debug\A111223016_UDPServer.exe.config
+C:\Users\user\Documents\GitHub\finalproject_-\UDPServer\A111223016_UDPServer\bin\Debug\A111223016_UDPServer.exe
+C:\Users\user\Documents\GitHub\finalproject_-\UDPServer\A111223016_UDPServer\bin\Debug\A111223016_UDPServer.pdb
+C:\Users\user\Documents\GitHub\finalproject_-\UDPServer\A111223016_UDPServer\obj\Debug\A111223016_UDPServer.csproj.AssemblyReference.cache
+C:\Users\user\Documents\GitHub\finalproject_-\UDPServer\A111223016_UDPServer\obj\Debug\A111223016_UDPServer.Form1.resources
+C:\Users\user\Documents\GitHub\finalproject_-\UDPServer\A111223016_UDPServer\obj\Debug\A111223016_UDPServer.Properties.Resources.resources
+C:\Users\user\Documents\GitHub\finalproject_-\UDPServer\A111223016_UDPServer\obj\Debug\A111223016_UDPServer.csproj.GenerateResource.cache
+C:\Users\user\Documents\GitHub\finalproject_-\UDPServer\A111223016_UDPServer\obj\Debug\A111223016_UDPServer.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\finalproject_-\UDPServer\A111223016_UDPServer\obj\Debug\A111223016_UDPServer.exe
+C:\Users\user\Documents\GitHub\finalproject_-\UDPServer\A111223016_UDPServer\obj\Debug\A111223016_UDPServer.pdb

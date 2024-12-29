@@ -1,30 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\sally\\OneDrive\\\u684C\u9762\\finalproject_--two\\FinalProject_3016_3035\\",
+  "WorkspaceRootPath": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|c:\\users\\sally\\onedrive\\\u684C\u9762\\finalproject_--two\\finalproject_3016_3035\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\sally\\OneDrive\\\u684C\u9762\\finalproject_--two\\FinalProject_3016_3035\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\sally\\OneDrive\\\u684C\u9762\\finalproject_--two\\FinalProject_3016_3035\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\sally\\OneDrive\\\u684C\u9762\\finalproject_--two\\FinalProject_3016_3035\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\sally\\OneDrive\\\u684C\u9762\\finalproject_--two\\FinalProject_3016_3035\\invitefrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\invitefrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:invitefrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\sally\\OneDrive\\\u684C\u9762\\finalproject_--two\\FinalProject_3016_3035\\invitefrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\invitefrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:invitefrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|c:\\users\\user\\documents\\github\\finalproject_-\\finalproject_--three\\finalproject_3016_3035\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\gameform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:gameform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,53 +38,66 @@
       "DocumentGroups": [
         {
           "DockedWidth": 220,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs [\u8A2D\u8A08]",
-              "DocumentMoniker": "C:\\Users\\sally\\OneDrive\\\u684C\u9762\\finalproject_--two\\FinalProject_3016_3035\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\sally\\OneDrive\\\u684C\u9762\\finalproject_--two\\FinalProject_3016_3035\\Form1.cs [\u8A2D\u8A08]",
-              "RelativeToolTip": "Form1.cs [\u8A2D\u8A08]",
+              "DocumentIndex": 6,
+              "Title": "GameForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\GameForm.Designer.cs",
+              "RelativeDocumentMoniker": "GameForm.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\GameForm.Designer.cs",
+              "RelativeToolTip": "GameForm.Designer.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAuwBYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T15:34:09.1Z",
-              "EditorCaption": " [\u8A2D\u8A08]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\sally\\OneDrive\\\u684C\u9762\\finalproject_--two\\FinalProject_3016_3035\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\sally\\OneDrive\\\u684C\u9762\\finalproject_--two\\FinalProject_3016_3035\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAKUAAAAAAAAAAAAUwLYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T15:50:38.764Z",
+              "WhenOpened": "2024-12-29T15:15:48.875Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "HomeForm.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\HomeForm.cs",
+              "RelativeDocumentMoniker": "HomeForm.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\HomeForm.cs",
+              "RelativeToolTip": "HomeForm.cs",
+              "ViewState": "AQIAAJEAAAAAAAAAAAAuwM0AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T14:47:48.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeForm.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\HomeForm.cs",
+              "RelativeDocumentMoniker": "HomeForm.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\HomeForm.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "HomeForm.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T14:42:17.485Z",
+              "EditorCaption": " [\u8A2D\u8A08]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "GameForm.cs",
-              "DocumentMoniker": "C:\\Users\\sally\\OneDrive\\\u684C\u9762\\finalproject_--two\\FinalProject_3016_3035\\GameForm.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\GameForm.cs",
               "RelativeDocumentMoniker": "GameForm.cs",
-              "ToolTip": "C:\\Users\\sally\\OneDrive\\\u684C\u9762\\finalproject_--two\\FinalProject_3016_3035\\GameForm.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\GameForm.cs",
               "RelativeToolTip": "GameForm.cs",
-              "ViewState": "AQIAADoBAAAAAAAAAAAswGIAAAAAAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAwCEAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-22T17:44:01.066Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GameForm.cs [\u8A2D\u8A08]",
-              "DocumentMoniker": "C:\\Users\\sally\\OneDrive\\\u684C\u9762\\finalproject_--two\\FinalProject_3016_3035\\GameForm.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\GameForm.cs",
               "RelativeDocumentMoniker": "GameForm.cs",
-              "ToolTip": "C:\\Users\\sally\\OneDrive\\\u684C\u9762\\finalproject_--two\\FinalProject_3016_3035\\GameForm.cs [\u8A2D\u8A08]",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\GameForm.cs [\u8A2D\u8A08]",
               "RelativeToolTip": "GameForm.cs [\u8A2D\u8A08]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-22T15:42:28.731Z",
@@ -88,26 +105,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "InviteFrom.cs [\u8A2D\u8A08]",
-              "DocumentMoniker": "C:\\Users\\sally\\OneDrive\\\u684C\u9762\\finalproject_--two\\FinalProject_3016_3035\\InviteFrom.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\InviteFrom.cs",
               "RelativeDocumentMoniker": "InviteFrom.cs",
-              "ToolTip": "C:\\Users\\sally\\OneDrive\\\u684C\u9762\\finalproject_--two\\FinalProject_3016_3035\\InviteFrom.cs [\u8A2D\u8A08]",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\InviteFrom.cs [\u8A2D\u8A08]",
               "RelativeToolTip": "InviteFrom.cs [\u8A2D\u8A08]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T02:47:38.41Z"
+              "WhenOpened": "2024-12-23T02:47:38.41Z",
+              "EditorCaption": " [\u8A2D\u8A08]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "InviteFrom.cs",
-              "DocumentMoniker": "C:\\Users\\sally\\OneDrive\\\u684C\u9762\\finalproject_--two\\FinalProject_3016_3035\\InviteFrom.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\InviteFrom.cs",
               "RelativeDocumentMoniker": "InviteFrom.cs",
-              "ToolTip": "C:\\Users\\sally\\OneDrive\\\u684C\u9762\\finalproject_--two\\FinalProject_3016_3035\\InviteFrom.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\InviteFrom.cs",
               "RelativeToolTip": "InviteFrom.cs",
-              "ViewState": "AQIAAHEBAAAAAAAAAAAswH8BAAAAAAAA",
+              "ViewState": "AQIAADUAAAAAAAAAAAAAALMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T14:26:07.612Z"
+              "WhenOpened": "2024-12-26T14:26:07.612Z",
+              "EditorCaption": ""
             }
           ]
         }

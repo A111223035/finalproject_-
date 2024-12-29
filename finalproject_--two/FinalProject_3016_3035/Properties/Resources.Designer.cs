@@ -63,56 +63,6 @@ namespace FinalProject_3016_3035.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
-        internal static System.Drawing.Bitmap _661655143c0e5 {
-            get {
-                object obj = ResourceManager.GetObject("661655143c0e5", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
-        /// </summary>
-        internal static System.Drawing.Bitmap _661655143c0e51 {
-            get {
-                object obj = ResourceManager.GetObject("661655143c0e51", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
-        /// </summary>
-        internal static System.Drawing.Bitmap _661655143c0e52 {
-            get {
-                object obj = ResourceManager.GetObject("661655143c0e52", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
-        /// </summary>
-        internal static System.Drawing.Bitmap _661655143c0e53 {
-            get {
-                object obj = ResourceManager.GetObject("661655143c0e53", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
-        /// </summary>
-        internal static System.Drawing.Bitmap _661655143c0e54 {
-            get {
-                object obj = ResourceManager.GetObject("661655143c0e54", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
-        /// </summary>
         internal static System.Drawing.Bitmap 剪刀 {
             get {
                 object obj = ResourceManager.GetObject("剪刀", resourceCulture);

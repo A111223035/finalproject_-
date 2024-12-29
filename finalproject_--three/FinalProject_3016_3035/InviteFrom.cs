@@ -12,20 +12,27 @@ using System.Net.Sockets;
 using System.Threading;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
+using FinalProject;
 
 namespace FinalProject_3016_3035
 {
     public partial class InviteFrom : Form
-    {
-        public InviteFrom()
-        {
-            InitializeComponent();           
-        }
+    {     
 
-        public InviteFrom(string playerName, string opponentName)
+        public InviteFrom(string playerName, string opponentName, string text1, string text2, string text3, System.Collections.Generic.List<string> listData)
         {
+            InitializeComponent();
             this.playerName = playerName;
             this.opponentName = opponentName;
+
+
+            // 設置目標控件的內容
+            textBox1.Text = text1;
+            textBox2.Text = text2;
+            textBox3.Text = text3;
+
+            // 將列表數據添加到 listBox1
+            listBox1.Items.AddRange(listData.ToArray());
         }
 
         // 宣告變數
@@ -60,6 +67,15 @@ namespace FinalProject_3016_3035
             button1.Enabled = false;
             button3.Enabled = false;
             button2.Enabled = true;
+
+            // 在窗體加載後，設置 socket 和監聽執行緒
+            T = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+            EndPoint ServerEP = new IPEndPoint(IPAddress.Parse("server-ip-address"), 12345); // 使用實際的伺服器 IP 和端口
+            T.Connect(ServerEP); // 連接伺服器
+
+            // 啟動監聽執行緒
+            Th = new Thread(Listen);
+            Th.Start();
         }
 
         // 發送數據到伺服器
@@ -70,21 +86,9 @@ namespace FinalProject_3016_3035
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            if (listBox1.SelectedIndex != -1)
-            {
-                if (listBox1.SelectedItem.ToString() != User)//有選擇對手
-                {
-                    Send("I" + User + "," +  "|" + listBox1.SelectedItem);
-                }
-                else
-                {
-                    MessageBox.Show("不可以邀請自己!");
-                }
-            }
-            else
-            {
-                MessageBox.Show("沒有選取邀請的對象!");//如果沒有選擇對手
-            }
+            HomeForm homeForm = new HomeForm();
+            homeForm.Show(); // 顯示 HomeForm
+            this.Hide();     // 隱藏 
         }
         string my;
         bool Turn = true;
@@ -145,45 +149,14 @@ namespace FinalProject_3016_3035
                         }
                         break;
 
-                    case "D":
+                    case "3":
                         textBox4.Text = Str;
                         button3.Enabled = true;
                         button2.Enabled = false;
                         T.Close();
                         Th.Abort();
-                        break;
-                    case "I":
-                        string[] F = Str.Split(',');
-                        DialogResult res = MessageBox.Show(F[0] + "邀請玩遊戲是否接受?", "邀請訊息", MessageBoxButtons.YesNo);
-                        if (res == DialogResult.Yes)
-                        {
-                            int i = listBox1.Items.IndexOf(F[0]);
-                            listBox1.SetSelected(i, true);
-                            listBox1.Enabled = false;
-                            button3.Enabled = false;
-                            button1.Enabled = true;
-                            Send("R" + "Y" + "|" + F[0]);
-                        }
-                        else
-                        {
-                            Send("R" + "N" + "|" + F[0]);
-                        }
-                        break;
-                    case "R":
-                        if (Str == "Y")
-                        {
-                            MessageBox.Show(listBox1.SelectedItem.ToString() + "接受你的邀請，可以開始遊戲");
-                            listBox1.Enabled = false;
-                            button3.Enabled = false;
-                            button1.Enabled = true;
-                            button2.Enabled = true;
-                        }
-                        else
-                        {
-                            MessageBox.Show("抱歉" + listBox1.SelectedItem.ToString() + "拒絕你的邀請");
-                        }
-                        break;
-
+                        break;    
+                        
                     case "7":
                         H2.Left = G.Width - int.Parse(Str) - H2.Width;
                         break;
@@ -199,11 +172,9 @@ namespace FinalProject_3016_3035
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (button1.Enabled == false)
-            {
-                Send("9" + User);// 在關閉表單前，通知伺服器用戶已離線。
-                T.Close();// 關閉套接字連線。
-            }
+            Send("9" + User); // 在關閉表單前，通知伺服器用戶已離線
+            T.Close(); // 關閉套接字連線
+            Th.Abort(); // 停止執行緒
         }      
 
 
@@ -225,6 +196,8 @@ namespace FinalProject_3016_3035
 //            Send("L");
             Q.Tag = new Point(5, -5); // 預設速度(往右上)
             Timer1.Start(); // 開始移動
+            button1.Enabled = true;
+            button3.Enabled = true;
         }
 
         // 開始拖曳球拍
@@ -389,11 +362,6 @@ namespace FinalProject_3016_3035
             currentSpeed.X = (int)(currentSpeed.X * 1.1); // 逐漸增加X軸速度
             currentSpeed.Y = (int)(currentSpeed.Y * 1.1); // 逐漸增加Y軸速度
             Q.Tag = currentSpeed;
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            this.Close();  // 退出遊戲
         }
     }
 }

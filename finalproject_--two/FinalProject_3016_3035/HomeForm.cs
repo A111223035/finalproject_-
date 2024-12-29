@@ -9,13 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;//匯入網路通訊協定相關參數
 using System.Net.Sockets;//匯入網路插座功能函數
-using System.Threading;//匯入多執行緒功能函數
+using System.Threading;
+using FinalProject_3016_3035;//匯入多執行緒功能函數
 
 namespace FinalProject
 {
-    public partial class 歡迎來到林珈羽和黃香綾製作的遊戲 : Form
+    public partial class HomeForm : Form
     {
-        public 歡迎來到林珈羽和黃香綾製作的遊戲()
+        public HomeForm()
         {
             InitializeComponent();
             button2.Enabled = false;
@@ -50,7 +51,8 @@ namespace FinalProject
         private void Form1_Load(object sender, EventArgs e)
         {
             this.Text += MyIP(); // 在窗體標題中顯示本地 IP 地址
-            button2.Enabled = false; // 禁用「開始遊戲」按鈕        }
+            button2.Enabled = false; // 禁用「開始遊戲」按鈕
+            button3.Enabled = false; // 禁用「邀請玩家」按鈕
         }
 
         // 連線伺服器按鈕點擊事件
@@ -69,14 +71,33 @@ namespace FinalProject
                 Th.IsBackground = true; // 設定為背景執行緒
                 Th.Start(); // 啟動執行緒
                 textBox4.Text = "已連線伺服器!" + "\r\n"; // 顯示連線成功訊息
-                button2.Enabled = true;
+                button2.Enabled = false;
                 Send("0" + User); // 發送用戶名稱到伺服器
                 button1.Enabled = false; // 禁用「連線伺服器」按鈕
-
+                button3.Enabled = true; // 啟用「邀請玩家」按鈕
             }
             catch
             {
                 textBox4.Text = "無法連線伺服器!" + "\r\n"; // 顯示連線失敗訊息
+            }
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex != -1)
+            {
+                if (listBox1.SelectedItem.ToString() != User) //有選擇對手
+                {
+                    //發送邀請給選擇的對手
+                    Send("I" + User + "," + comboBox1.Text + "|" + listBox1.SelectedItem);
+                }
+                else
+                {
+                    MessageBox.Show("不可以邀請自己!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("沒有選取邀請的對象!");
             }
         }
         string my;
@@ -115,9 +136,11 @@ namespace FinalProject
                         for (int i = 0; i < M.Length; i++) listBox1.Items.Add(M[i]);
                         break;
                     case "5":
-                        DialogResult result = MessageBox.Show("是否重玩遊戲", "重玩訊息", MessageBoxButtons.YesNo);
+                        DialogResult result = MessageBox.Show("是否重玩遊戲?", "重玩訊息", MessageBoxButtons.YesNo);
                         if (result == DialogResult.Yes)
                         {
+                            comboBox1.Text = Str;
+                            comboBox1.Enabled = false;
                             Send("P" + "Y" + "|" + listBox1.SelectedItem);
                         }
                         else
@@ -139,18 +162,21 @@ namespace FinalProject
                     case "D":
                         textBox4.Text = Str;
                         button1.Enabled = true;
+                        button3.Enabled = false;
                         T.Close();
                         Th.Abort();
                         break;
                     case "I":
                         string[] F = Str.Split(',');
-                        DialogResult res = MessageBox.Show(F[0] + "邀請玩遊戲，是否接受?", "邀請訊息", MessageBoxButtons.YesNo);
+                        DialogResult res = MessageBox.Show(F[0] + "邀請玩遊戲(" + F[1] + ")，是否接受?", "邀請訊息", MessageBoxButtons.YesNo);
                         if (res == DialogResult.Yes)
                         {
                             int i = listBox1.Items.IndexOf(F[0]);
                             listBox1.SetSelected(i, true);
                             listBox1.Enabled = false;
-
+                            comboBox1.Text = F[1];
+                            comboBox1.Enabled = false;
+                            button3.Enabled = false;
                             button2.Enabled = true;
                             Send("R" + "Y" + "|" + F[0]);
                         }
@@ -164,6 +190,8 @@ namespace FinalProject
                         {
                             MessageBox.Show(listBox1.SelectedItem.ToString() + "接受你的邀請，可以開始遊戲");
                             listBox1.Enabled = false;
+                            comboBox1.Enabled = false;
+                            button3.Enabled = false;
                             button2.Enabled = true;
                         }
                         else
@@ -175,6 +203,7 @@ namespace FinalProject
                         textBox4.Text = "使用者名稱重複，請重新輸入";
                         button1.Enabled = true;
                         button2.Enabled = false;
+                        button3.Enabled = false;
                         T.Close();
                         Th.Abort();
                         break;
@@ -192,22 +221,29 @@ namespace FinalProject
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            // 傳入相應參數來建立 GameForm 實例
-            string playerName = textBox1.Text; // 假設 playerName 來自 textBox1
-            string opponentName = textBox2.Text; // 假設 opponentName 來自 textBox2
+            // 定義玩家和對手名稱
+            string playerName = "玩家1";
+            string opponentName = "玩家2";
 
-            // 剩餘的資料
-            string text1 = textBox1.Text;
-            string text2 = textBox2.Text;
-            string text3 = textBox3.Text;
-            var listData = listBox1.Items.Cast<string>().ToList();
 
-            // 傳入參數建立 gameForm
-            GameForm gameForm = new GameForm(playerName, opponentName, text1, text2, text3, listData);
-
-            // 顯示表單
-            gameForm.Show();
+            if (comboBox1.Text == "猜拳遊戲") 
+            {
+                // 創建 GameForm 並傳遞當前的 Form1
+                GameForm gameForm = new GameForm(playerName, opponentName);
+                gameForm.Show(); // 顯示 GameForm
+                this.Hide();     // 隱藏 Form1
+            }
+            else if (comboBox1.Text == "飛碟球遊戲")
+            {
+                // 創建 InviteFrom 並傳遞當前的 Form1
+                InviteFrom inviteFrom = new InviteFrom(playerName, opponentName);
+                inviteFrom.Show(); // 顯示 InviteFrom
+                this.Hide();     // 隱藏 Form1
+            }
+            else
+            {
+                MessageBox.Show("沒有選取遊戲!");
+            }
         }
-
     }
 }

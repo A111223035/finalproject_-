@@ -8,6 +8,7 @@ using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace FinalProject
 {
@@ -21,6 +22,8 @@ namespace FinalProject
         private int countdown;
         private System.Windows.Forms.Timer countdownTimer;
         private bool gameStarted;
+        private int PlayerChoice;
+
 
         // 分數變數
         private int playerScore = 0;
@@ -32,9 +35,19 @@ namespace FinalProject
             this.playerName = playerName;
             this.opponentName = opponentName;
             random = new Random();
-            gameStarted = false;
+            gameStarted = false;              
 
             InitializeGame();
+
+            button2.Enabled = false;
+            button3.Enabled = true;
+            button4.Enabled = false;
+            button5.Enabled = false;
+            button6.Enabled = false;
+            btnPaper.Enabled = false;
+            btnRock.Enabled = false;
+            btnScissors.Enabled = false;
+            btnStartGame.Enabled = true;
         }
         // 宣告變數
         Socket T; // 用於網絡通信的 Socket
@@ -71,9 +84,9 @@ namespace FinalProject
             btnScissors.Enabled = true;
 
             // 重置倒數計時
-            lblCountdown.Text = "倒計時: 0";
+            lblCountdown.Text = "剩餘選擇時間： 0";
             countdown = 5;
-            lblCountdown.Text = $"倒計時: {countdown}";
+            lblCountdown.Text = $"剩餘選擇時間： {countdown}";
             countdownTimer.Start();
         }
 
@@ -81,28 +94,27 @@ namespace FinalProject
         {
             if (!gameStarted) return;  // 如果遊戲尚未開始，則無法選擇
 
-            playerChoice = (sender as Button).Text;
-            opponentChoice = GetOpponentChoice();  // 獲得對手的隨機選擇
-            StartCountdown();
+            playerChoice = (sender as System.Windows.Forms.Button).Text;
+ //           opponentChoice = GetOpponentChoice();  // 獲得對手的隨機選擇            
         }
 
-        private string GetOpponentChoice()
-        {
-            string[] choices = { "剪刀", "石頭", "布" };
-            return choices[random.Next(choices.Length)];
-        }
+//        private string GetOpponentChoice()
+//        {
+//           string[] choices = { "剪刀", "石頭", "布" };
+//            return choices[random.Next(choices.Length)];
+//        }
 
         private void StartCountdown()
         {
             countdown = 5;
-            lblCountdown.Text = $"倒計時: {countdown}";
+            lblCountdown.Text = $"剩餘選擇時間： {countdown}";
             countdownTimer.Start();
         }
 
         private void CountdownTimer_Tick(object sender, EventArgs e)
         {
             countdown--;
-            lblCountdown.Text = $"倒計時: {countdown}";
+            lblCountdown.Text = $"剩餘選擇時間： {countdown}";
 
             if (countdown == 0)
             {
@@ -113,50 +125,21 @@ namespace FinalProject
 
         private void DetermineWinner()
         {
-            string result;
-            if (playerChoice == opponentChoice)
-            {
-                result = "平手!";
-            }
-            else if ((playerChoice == "剪刀" && opponentChoice == "布") ||
-                     (playerChoice == "石頭" && opponentChoice == "剪刀") ||
-                     (playerChoice == "布" && opponentChoice == "石頭"))
-            {
-                result = "你贏了!";
-                playerScore++;  // 玩家贏時增加分數
-            }
-            else
-            {
-                result = "你輸了!";
-                opponentScore++;  // 對手贏時增加分數
-            }
 
-            if(playerChoice == "剪刀")
-            {
-                btnScissors.BackColor = Color.Yellow;
-            }
-            else if(playerChoice == "石頭")
-            {
-                btnRock.BackColor = Color.Yellow;
-            }
-            else
-            {
-                btnPaper.BackColor = Color.Yellow;
-            }
+            Send("6" + "|" + listBox1.SelectedItem);
+            if (gamemode == 3)
+                if (playerScore == 2)
+                {
+                    MessageBox.Show(User + "你贏了");
+                    Send("4" + win + "|" + listBox1.SelectedItem);
+                }
 
-            if (playerChoice == "剪刀")
-            {
-                button4.BackColor = Color.Yellow;
-            }
-            else if (playerChoice == "石頭")
-            {
-                button6.BackColor = Color.Yellow;
-            }
-            else
-            {
-                button5.BackColor = Color.Yellow;
-            }
-            DisplayResult(result);
+            if (gamemode == 5)
+                if (playerScore == 3)
+                {
+                    MessageBox.Show(User + "你贏了");
+                    Send("4" + win + "|" + listBox1.SelectedItem);
+                }
         }
 
 
@@ -200,47 +183,25 @@ namespace FinalProject
             btnScissors.Enabled = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();  // 退出遊戲
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            if (listBox1.SelectedIndex != -1)
-            {
-                if (listBox1.SelectedItem.ToString() != User)//有選擇對手
-                {
-                    Send("I" + User + "," + "|" + listBox1.SelectedItem);
-                }
-                else
-                {
-                    MessageBox.Show("不可以邀請自己!");
-                }
-            }
-            else
-            {
-                MessageBox.Show("沒有選取邀請的對象!");//如果沒有選擇對手
-            }
-        }
-
         private void Forml_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.ExitThread();  // 關閉應用程式
         }
 
-        private void btnStartGame_Click_1(object sender, EventArgs e)
+        private void btnStartGame_Click(object sender, EventArgs e)
         {
-            // 創建 GameForm 並傳遞當前的 Form1
-            InviteFrom inviteForm = new InviteFrom(playerName, opponentName);
-            inviteForm.Show(); // 顯示 GameForm
-            this.Hide();     // 隱藏 Form1
             button4.BackColor = original; // 恢復按鈕背景顏色
             button5.BackColor = original; // 恢復按鈕背景顏色
             button6.BackColor = original; // 恢復按鈕背景顏色
             btnPaper.BackColor = original; // 恢復按鈕背景顏色
             btnRock.BackColor = original; // 恢復按鈕背景顏色
             btnScissors.BackColor = original; // 恢復按鈕背景顏色
+            button2.Enabled = true;
+            button3.Enabled = true;
+            btnPaper.Enabled = true;
+            btnRock.Enabled = true;
+            btnScissors.Enabled = true;
+            StartCountdown();
         }
 
         private void Send(string Str) // 傳送訊息到伺服器
@@ -268,7 +229,6 @@ namespace FinalProject
                     T.Close();
                     listBox1.Items.Clear();
                     MessageBox.Show("伺服器斷線了!");
-                    button1.Enabled = true;
                     Th.Abort();
                 }
                 Msg = Encoding.Default.GetString(B, 0, inLen);
@@ -282,7 +242,7 @@ namespace FinalProject
                         for (int i = 0; i < M.Length; i++) listBox1.Items.Add(M[i]);
                         break;
                     case "5":
-                        DialogResult result = MessageBox.Show("是否重玩遊戲(" + Str + "輪)?", "重玩訊息", MessageBoxButtons.YesNo);
+                        DialogResult result = MessageBox.Show("是否重玩遊戲(" + Str + ")?", "重玩訊息", MessageBoxButtons.YesNo);
                         if (result == DialogResult.Yes)
                         {
 //                            comboBox1.Text = Str;
@@ -304,50 +264,111 @@ namespace FinalProject
                             MessageBox.Show("抱歉" + listBox1.SelectedItem.ToString() + "拒絕你的邀請");
                         }
                         break;
+                    case "6":
+                        int opponentChoice = int.Parse(Str);
+                        int playerChoice = PlayerChoice;
 
-                    case "D":
-                        txtResult.Text = Str;
-                        button3.Enabled = true;
-                        button2.Enabled = false;
-                        T.Close();
-                        Th.Abort();
-                        break;
-                    case "I":
-                        string[] F = Str.Split(',');
-                        DialogResult res = MessageBox.Show(F[0] + "邀請玩遊戲(" + F[1] + "輪)，是否接受?", "邀請訊息", MessageBoxButtons.YesNo);
-                        if (res == DialogResult.Yes)
+                        if (playerChoice == opponentChoice)
                         {
-                            int i = listBox1.Items.IndexOf(F[0]);
-                            listBox1.SetSelected(i, true);
-                            listBox1.Enabled = false;
-//                            comboBox1.Text = F[1];
-//                            comboBox1.Enabled = false;
-                            button3.Enabled = false;
-                            button1.Enabled = true;
-                            Send("R" + "Y" + "|" + F[0]);
+                        }
+                        else if ((playerChoice == 2 && opponentChoice == 3) ||
+                                 (playerChoice == 1 && opponentChoice == 2) ||
+                                 (playerChoice == 3 && opponentChoice == 1) ||
+                                 (playerChoice == 2 && opponentChoice == 0) ||
+                                 (playerChoice == 1 && opponentChoice == 0) ||
+                                 (playerChoice == 3 && opponentChoice == 0) )
+                        {
+                            playerScore++;  // 玩家贏時增加分數
                         }
                         else
                         {
-                            Send("R" + "N" + "|" + F[0]);
+                            opponentScore++;  // 對手贏時增加分數
+                        }
+
+                        if (playerChoice == 2)
+                        {
+                            btnScissors.BackColor = Color.Yellow;
+                        }
+                        else if (playerChoice == 1)
+                        {
+                            btnRock.BackColor = Color.Yellow;
+                        }
+                        else if (playerChoice == 3)
+                        {
+                            btnPaper.BackColor = Color.Yellow;
+                        }
+
+                        if (opponentChoice == 2)
+                        {
+                            button4.BackColor = Color.Yellow;
+                        }
+                        else if (opponentChoice == 1)
+                        {
+                            button6.BackColor = Color.Yellow;
+                        }
+                        else if (opponentChoice == 3)
+                        {
+                            button5.BackColor = Color.Yellow;
                         }
                         break;
-                    case "R":
-                        if (Str == "Y")
-                        {
-                            MessageBox.Show(listBox1.SelectedItem.ToString() + "接受你的邀請，可以開始遊戲");
-                            listBox1.Enabled = false;
- //                           comboBox1.Enabled = false;
-                            button3.Enabled = false;
-                            button1.Enabled = true;
-                            button2.Enabled = true;
-                        }
-                        else
-                        {
-                            MessageBox.Show("抱歉" + listBox1.SelectedItem.ToString() + "拒絕你的邀請");
-                        }
+                    case "4":
+                        int opwins = int.Parse(Str);
+                        if (opwins > win)
+                            MessageBox.Show(User + "你輸了");
                         break;
                 }
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex >= 0)
+            {
+                Send("5" + "猜拳遊戲" + "|" + listBox1.SelectedItem);
+            }
+            button4.Enabled = false;
+            button5.Enabled = false;
+            button6.Enabled = false;
+            btnPaper.Enabled = false;
+            btnRock.Enabled = false;
+            btnScissors.Enabled = false;
+            btnStartGame.Enabled = true;
+
+            playerScore = 0;
+            opponentScore = 0;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // 創建 HomeForm 並傳遞當前的 Form
+            HomeForm homeForm = new HomeForm();
+            homeForm.Show(); // 顯示 HomeForm
+            this.Hide();     // 隱藏 
+        }
+
+        private void btnRock_Click(object sender, EventArgs e)
+        {
+            PlayerChoice = 1;
+        }
+
+        private void btnScissors_Click(object sender, EventArgs e)
+        {
+            PlayerChoice = 2;
+        }
+
+        private void btnPaper_Click(object sender, EventArgs e)
+        {
+            PlayerChoice = 3;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            gamemode = 3;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            gamemode = 5;
         }
     }
 }
