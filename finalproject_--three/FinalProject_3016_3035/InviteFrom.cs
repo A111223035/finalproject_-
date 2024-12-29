@@ -135,6 +135,10 @@ namespace FinalProject_3016_3035
                         if (Str == "Y")
                         {
                             MessageBox.Show(listBox1.SelectedItem.ToString() + "接受你的邀請，可以開始重玩遊戲");
+                            playerScore = 0;
+                            opponentScore = 0;
+                            UpdateScore();
+                            ResetBall();
                         }
                         else
                         {
@@ -176,11 +180,7 @@ namespace FinalProject_3016_3035
             if (listBox1.SelectedIndex >= 0)
             {
                 Send("5" + "|" + listBox1.SelectedItem);
-            }
-            playerScore = 0;
-            opponentScore = 0;
-            UpdateScore();
-            ResetBall();
+            }           
         }
 
         // 啟動遊戲

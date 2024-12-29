@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--ball\\FinalProject_3016_3035\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--ball\\FinalProject_3016_3035\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--ball\\FinalProject_3016_3035\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|c:\\users\\user\\documents\\github\\finalproject_-\\finalproject_--ball\\finalproject_3016_3035\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--ball\\FinalProject_3016_3035\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--ball\\FinalProject_3016_3035\\invitefrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,6 +13,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--ball\\FinalProject_3016_3035\\invitefrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:invitefrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--ball\\FinalProject_3016_3035\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|c:\\users\\user\\documents\\github\\finalproject_-\\finalproject_--ball\\finalproject_3016_3035\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--ball\\FinalProject_3016_3035\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,34 +34,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 220,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "InviteFrom.cs [\u8A2D\u8A08]",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--ball\\FinalProject_3016_3035\\InviteFrom.cs",
               "RelativeDocumentMoniker": "InviteFrom.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--ball\\FinalProject_3016_3035\\InviteFrom.cs [\u8A2D\u8A08]",
               "RelativeToolTip": "InviteFrom.cs [\u8A2D\u8A08]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T02:47:38.41Z"
+              "WhenOpened": "2024-12-23T02:47:38.41Z",
+              "EditorCaption": " [\u8A2D\u8A08]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "InviteFrom.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--ball\\FinalProject_3016_3035\\InviteFrom.cs",
               "RelativeDocumentMoniker": "InviteFrom.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--ball\\FinalProject_3016_3035\\InviteFrom.cs",
               "RelativeToolTip": "InviteFrom.cs",
-              "ViewState": "AQIAAEEBAAAAAAAAAAAAAHQBAAAPAAAA",
+              "ViewState": "AQIAANMAAAAAAAAAAAAowOEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T14:26:07.612Z"
+              "WhenOpened": "2024-12-26T14:26:07.612Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GameForm.cs [\u8A2D\u8A08]",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--ball\\FinalProject_3016_3035\\GameForm.cs",
               "RelativeDocumentMoniker": "GameForm.cs",
@@ -73,20 +75,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "GameForm.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--ball\\FinalProject_3016_3035\\GameForm.cs",
               "RelativeDocumentMoniker": "GameForm.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--ball\\FinalProject_3016_3035\\GameForm.cs",
               "RelativeToolTip": "GameForm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIAAAAAAAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwIAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-22T17:44:01.066Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Form1.cs [\u8A2D\u8A08]",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--ball\\FinalProject_3016_3035\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -98,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--ball\\FinalProject_3016_3035\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -106,7 +108,8 @@
               "RelativeToolTip": "Form1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T15:50:38.764Z"
+              "WhenOpened": "2024-12-22T15:50:38.764Z",
+              "EditorCaption": ""
             }
           ]
         }

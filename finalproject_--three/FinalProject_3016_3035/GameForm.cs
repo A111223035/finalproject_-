@@ -241,6 +241,18 @@ namespace FinalProject
                         if (Str == "Y")
                         {
                             MessageBox.Show(listBox1.SelectedItem.ToString() + "接受你的邀請，可以開始重玩遊戲");
+                            btnPaper2.Enabled = false;
+                            btnScissors2.Enabled = false;
+                            btnRock2.Enabled = false;
+                            btnPaper.Enabled = false;
+                            btnRock.Enabled = false;
+                            btnScissors.Enabled = false;
+                            btnStartGame.Enabled = false;
+                            button7.Enabled = true;
+                            button8.Enabled = true;
+
+                            playerScore = 0;
+                            opponentScore = 0;
                         }
                         else
                         {
@@ -439,19 +451,7 @@ namespace FinalProject
             if (listBox1.SelectedIndex >= 0)
             {
                 Send("R" + "猜拳遊戲" + "|" + listBox1.SelectedItem);
-            }
-            btnPaper2.Enabled = false;
-            btnScissors2.Enabled = false;
-            btnRock2.Enabled = false;
-            btnPaper.Enabled = false;
-            btnRock.Enabled = false;
-            btnScissors.Enabled = false;
-            btnStartGame.Enabled = false;
-            button7.Enabled = true;
-            button8.Enabled = true;
-
-            playerScore = 0;
-            opponentScore = 0;
+            }          
         }
     }
 }
