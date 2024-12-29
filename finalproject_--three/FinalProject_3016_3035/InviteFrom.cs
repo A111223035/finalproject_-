@@ -77,6 +77,8 @@ namespace FinalProject_3016_3035
         }
         private void button3_Click(object sender, EventArgs e)
         {
+            Send("9" + User);  // 在關閉表單前，通知伺服器用戶已離線。
+            T.Close();        // 關閉套接字連線。
             HomeForm homeForm = new HomeForm();
             homeForm.Show(); // 顯示 HomeForm
             this.Hide();     // 隱藏 
