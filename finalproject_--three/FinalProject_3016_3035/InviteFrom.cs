@@ -67,15 +67,6 @@ namespace FinalProject_3016_3035
             button1.Enabled = false;
             button3.Enabled = false;
             button2.Enabled = true;
-
-            // 在窗體加載後，設置 socket 和監聽執行緒
-            T = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
-            EndPoint ServerEP = new IPEndPoint(IPAddress.Parse("server-ip-address"), 12345); // 使用實際的伺服器 IP 和端口
-            T.Connect(ServerEP); // 連接伺服器
-
-            // 啟動監聽執行緒
-            Th = new Thread(Listen);
-            Th.Start();
         }
 
         // 發送數據到伺服器
