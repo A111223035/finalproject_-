@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:invitefrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\invitefrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:invitefrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\invitefrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|solutionrelative:invitefrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2246208F-3AFA-43FB-AF89-D9978E8C4B10}|FinalProject_3016_3035.csproj|C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -78,13 +78,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "GameForm.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\GameForm.cs",
               "RelativeDocumentMoniker": "GameForm.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\GameForm.cs",
               "RelativeToolTip": "GameForm.cs",
-              "ViewState": "AQIAAN8AAAAAAAAAAAAAAPwAAAAAAAAA",
+              "ViewState": "AQIAAOQAAAAAAAAAAAAAAMIBAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-22T17:44:01.066Z",
               "EditorCaption": ""
@@ -103,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "InviteFrom.cs [\u8A2D\u8A08]",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\InviteFrom.cs",
               "RelativeDocumentMoniker": "InviteFrom.cs",
@@ -121,7 +121,7 @@
               "RelativeDocumentMoniker": "InviteFrom.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\finalproject_-\\finalproject_--three\\FinalProject_3016_3035\\InviteFrom.cs",
               "RelativeToolTip": "InviteFrom.cs",
-              "ViewState": "AQIAAHUAAAAAAAAAAAAkwIUAAAAdAAAA",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAkwIwAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-26T14:26:07.612Z",
               "EditorCaption": ""
